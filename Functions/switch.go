@@ -3,11 +3,12 @@ package main
 import (
 	"errors"
 	"fmt"
+	"time"
 )
 
 func main() {
 	var numerator int = 11
-	var denominator int = 0
+	var denominator int = 11
 	var div, mod, err = ArithmeticOperation(numerator, denominator)
 
 	// Handle error first
@@ -36,6 +37,7 @@ func main() {
 }
 
 func ArithmeticOperation(numerator int, denominator int) (int, int, error) {
+	t := time.Now()// Record the start time of the operation
 	var err error
 	if denominator == 0 {
 		err = errors.New("denominator cannot be zero")
@@ -43,5 +45,7 @@ func ArithmeticOperation(numerator int, denominator int) (int, int, error) {
 	}
 	var div int = numerator / denominator
 	var mod int = numerator % denominator
+	fmt.Println("Elapsed time:", time.Since(t))// Print the time taken to perform the operations
 	return div, mod, err
+	
 }

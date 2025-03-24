@@ -26,8 +26,8 @@ func ArthOperation(numerator int, denominator int) (int, int, error) {
     	err = errors.New("denominator cannot be zero") 
 		return 0, 0,err
     }
+
     var div int = numerator / denominator
     var mod int = numerator % denominator
-
     return div, mod, err
 }
