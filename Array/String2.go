@@ -17,7 +17,8 @@ func main() {
 	Sbuilder()
 }
 
-// Using strings.Builder  
+
+// OR Using strings.Builder  
 func Sbuilder() {
 	StrSlices := []string{"k", "a", "m", "r", "a", "n"}
 	var StrBuilder strings.Builder  //  Create empty strings.Builder object
