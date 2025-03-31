@@ -25,7 +25,6 @@ func main() {
 
 	}
  
-	fmt.Println(myInfo.Domain,myInfo.Uname,myInfo.roll)//Accessing fields directly
+	fmt.Println(myInfo.Domain,myInfo.Uname,myInfo.roll) 
 }
-
  
