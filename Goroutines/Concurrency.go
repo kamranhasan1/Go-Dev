@@ -14,7 +14,7 @@ func main(){
 	for i := 0; i<len(dbData);i++{
 	 dbCall(i)
 	}
-	fmt.Printf("total execuation time %v",time.Since(t0))
+	fmt.Printf("total execu ation time %v",time.Since(t0))
 
 }
 
