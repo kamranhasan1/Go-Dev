@@ -7,6 +7,7 @@
 	Domain string
 	A
 	B
+	D
 }
 
 type A struct {
@@ -16,15 +17,19 @@ type A struct {
 type B struct {
 	roll int
 }
+type D struct{
+	regNo int
+}
 
 func main() {
 	var myInfo Uni = Uni{
 		Domain: "CSE",
 		A:     A{Uname: "kamran"},
 		B:     B{roll: 6},
+		D:	   D{regNo: 12217803},
 
 	}
  
-	fmt.Println(myInfo.Domain,myInfo.Uname,myInfo.roll) 
+	fmt.Println(myInfo.Domain,myInfo.Uname,myInfo.roll,myInfo.regNo) 
 }
  
