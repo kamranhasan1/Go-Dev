@@ -1,7 +1,6 @@
  /* this code will show the execuation without the concurrency, I mean how the code is going the
  work without concurrency*/ 
- package main
-
+ 
 package main
 
 import (
