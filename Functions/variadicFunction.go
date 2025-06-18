@@ -14,5 +14,8 @@ func sum (nums ...int) int{//You define a variadic function using ... before the
 }
 func main(){
 	res := sum(3,4,5,6,7,7,8)//here is the example
+	numss := []int{3,4,5,6}
+	res2 := sum(numss ...)
+	fmt.Println(res2)//or we can do this also f
 	fmt.Println(res)
 }
