@@ -31,7 +31,7 @@ func printSlice[T interface{} ](items []T){
 }
 */
 
-
+ 
 
 // or "T int|string" can also be used 
 
@@ -44,6 +44,25 @@ func printSlice[T int|string ](items []T){
 	}
 
 }
+
+ 
+
+// or "comprable" 
+// func printSlice[T comparable](items []T){
+
+// 	for _, item := range items {
+// 		fmt.Println(item)
+
+
+// 	}
+
+// }
+
+
+
+
+
+
 
 func main (){
 	nums := []int{1,23,4,4}
