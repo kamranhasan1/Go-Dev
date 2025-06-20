@@ -15,4 +15,4 @@ func (c Calculator) Multiply() int {
 func main() {
 	mul := Calculator{24, 35}
 	fmt.Printf("%v", mul.Multiply())
-}
+} 
