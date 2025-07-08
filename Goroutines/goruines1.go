@@ -6,7 +6,7 @@ import (
 )
 // var wg sync.WaitGroup
 
-func work(id int,w *sync.WaitGroup){
+func worbk(id int,w *sync.WaitGroup){
 	defer w.Done()
 	fmt.Println("worker with ", id," is working")
 }
@@ -19,3 +19,4 @@ func main(){
 	}
 	wg.Wait()
 }
+

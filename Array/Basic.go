@@ -4,8 +4,8 @@ import (
 )
 
 func main(){
-	//fixed size arr
-	arr := [3]int32{2,3,4}
+	//explicitly, size arr
+	arr := [...]int32{2,3,4}
 	fmt.Println(arr)
 
 	//printing whole arr using loop // this is slice because it has no fixed size like vector in cpp
@@ -32,8 +32,7 @@ func main(){
 
 
 
-
-
+ 
 
 
 
